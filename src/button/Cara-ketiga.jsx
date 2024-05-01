@@ -1,4 +1,5 @@
-function ButtonTiga() {
+/* eslint-disable react/prop-types */
+function ButtonTiga({ children }) {
     // cara ketiga menggunakan array
     return (
         <button className={[
@@ -8,7 +9,7 @@ function ButtonTiga() {
             'rounded',
             'transition duration-300',
             'shadow-xl shadow-blue-300 hover:shadow-none'
-        ].join(' ')}>Button</button>
+        ].join(' ')}>{children}</button>
     )
 }
 

@@ -1,6 +1,7 @@
-import cn from "../init";
+/* eslint-disable react/prop-types */
+import cn from "../utils";
 
-function ButtonEmpat() {
+function ButtonEmpat({ children }) {
     // cara keempat menggunakan function
     return (
         <button className={cn(
@@ -10,7 +11,7 @@ function ButtonEmpat() {
             'rounded',
             'transition duration-300',
             'shadow-xl shadow-blue-300 hover:shadow-none'
-        )}>Button</button>
+        )}>{children}</button>
     )
 }
 
